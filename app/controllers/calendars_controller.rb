@@ -8,7 +8,7 @@ class CalendarsController < ApplicationController
 
   # 予定の保存
   def create
-    binding.pry
+    
     Plan.create(content:plan_params[:content])
     redirect_to "/plan"
   end
